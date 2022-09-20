@@ -232,8 +232,8 @@ div.menu i {
   color: #f3f3f3;
 }
 
-/* Media queries section */
-@media (max-width: 500px) and (orientation: portrait) {
+/* Media queries section for all forms of mobile viewing*/
+@media (max-width: 600px) and (orientation: portrait) {
   nav.navbar {
     padding: 0px 2px;
     font-size: 10px;
@@ -242,7 +242,7 @@ div.menu i {
   }
   div.first-nav img {
     width: 120px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   div.first-nav a {
@@ -258,7 +258,7 @@ div.menu i {
 
   main form {
     position: relative;
-    left: 40px;
+    left: 20px;
     top: 150px;
   }
 
@@ -275,7 +275,38 @@ div.menu i {
     box-sizing: content-box;
   }
 
-  /* div.menu i {
+  .footcontainer1 a {
+    padding: 0 2px;
+  }
+
+  .second-nav {
+    margin-left: 10px;
+  }
+}
+
+/* media queries for all forms of ipad viewing experience */
+@media (min-width: 768px) and (orientation: portrait) {
+  .content-container {
     display: none;
-  } */
+  }
+
+  main form {
+    margin-top: 200px;
+  }
+}
+
+/* media queries for 1024px monitors */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .content-container {
+    overflow: hidden;
+    margin: 0 5px;
+    max-width: 99%;
+  }
+}
+
+/* media queries for 4k monitors */
+@media (min-width: 2300px) and (orientation: landscape) {
+  .content-container {
+    left: 500px;
+  }
 }
